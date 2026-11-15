@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reportar Rescate - Sistema de Control de Rescate y Adopción</title>
+</head>
+<body>
+    <header>
+        <h1>SISTEMA DE CONTROL DE RESCATE Y ADOPCIÓN ANIMAL</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html">Reportar Rescate</a></li>
+                <li><a href="rescates.html">Lista de Rescates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>REPORTAR ANIMAL RESCATADO</h2>
+            <p>Complete el siguiente formulario para registrar un nuevo caso en el sistema.</p>
+
+            <article>
+                <h3>Datos del Rescate</h3>
+                <form action="rescates.html" method="get">
+                    <p>
+                        <label for="nombre">Nombre provisional del animal:</label><br>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej. Toby">
+                    </p>
+
+                    <p>
+                        <label for="categoria">Categoría:</label><br>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">-- Seleccione una categoría --</option>
+                            <option value="Perros">Perros</option>
+                            <option value="Gatos">Gatos</option>
+                            <option value="Fauna Silvestre">Fauna Silvestre</option>
+                        </select>
+                    </p>
+
+                    <p>Nivel de urgencia:</p>
+                    <p>
+                        <input type="radio" id="urgencia_alta" name="urgencia" value="Alta" required>
+                        <label for="urgencia_alta">Alta</label><br>
+
+                        <input type="radio" id="urgencia_media" name="urgencia" value="Media">
+                        <label for="urgencia_media">Media</label><br>
+
+                        <input type="radio" id="urgencia_baja" name="urgencia" value="Baja">
+                        <label for="urgencia_baja">Baja</label>
+                    </p>
+
+                    <p>
+                        <label for="descripcion">Descripción del estado del animal:</label><br>
+                        <textarea id="descripcion" name="descripcion" rows="5" cols="50" required placeholder="Describa las condiciones físicas y el lugar donde fue encontrado..."></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Registrar Animal</button>
+                        <button type="reset">Limpiar</button>
+                    </p>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollado por: Fabiola Elizabeth Chingua Castro - Universidad Técnica de Manabí</p>
+        <p>Contacto: fchingua1233@utm.edu.ec | &copy; 2026 Sistema de Control de Rescate y Adopción.</p>
+    </footer>
+</body>
+</html>
